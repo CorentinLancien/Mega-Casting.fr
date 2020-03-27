@@ -1,0 +1,692 @@
+/* HEADER START */
+header {
+  border-bottom: 2px solid black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+.logoNavBar img {
+  width: 100px;
+  margin: 10px 30px 10px 10px;
+}
+
+.recherche li {
+  float: right;
+}
+
+.recherche {
+  padding: 36px 36px;
+}
+
+.recherche i {
+  color: #4CAF50;
+  margin: 12px;
+  text-shadow: 1px 1px white;
+}
+
+.recherche input {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.menu li a {
+  display: block;
+  padding: 45px 36px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu a {
+  color: #848484;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 0;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.menu a::before {
+  content: "";
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  background-color: #4CAF50;
+}
+
+.menu a:hover::before {
+  right: 0;
+  left: 0;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.login{
+  background-color: #4CAF50;
+}
+
+.login button{
+    margin-right: 10px;
+      font-weight: bold;
+}
+/* HEADER END */
+/* ACCUEIL START */
+.title {
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 50px;
+}
+
+.col-sm-4 {
+  margin-top: 20px;
+}
+
+.blocAccueil {
+  border: 2px solid rgb(75, 175, 80);
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 100px;
+}
+
+.blocAccueil h3 {
+  padding-bottom: 10px;
+  color: #4CAF50;
+  text-shadow: 1px 1px white;
+}
+
+section {
+  background-color: #333333ed;
+  color: white;
+}
+
+.image1Accueil {
+  background-image: url("https://cdn.pixabay.com/photo/2019/10/24/15/33/stairs-4574579__340.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 200px;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: emoji;
+  font-style: oblique;
+  font-weight: bold;
+  color: #4CAF50;
+  text-shadow: 2px 2px white;
+}
+
+.para1 {
+  margin-bottom: 112px;
+}
+
+.para2 {
+  margin-bottom: 42px;
+}
+
+.iconPara {
+  margin: 10px;
+  color: #4CAF50;
+  margin: 10px;
+}
+
+/* ACCUEIL END */
+/* MÉTIER START*/
+.blocMetier {
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.flex-container-gallerie {
+  display: flex;
+}
+
+.imageGallerie {
+  position: relative;
+}
+
+.imageGallerie img {
+  opacity: 0.7;
+  width: 350px;
+  padding: 2px;
+}
+
+.texteGallerie {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.premierTexteImage1 h3 {
+  color: white;
+  margin: 20px;
+  font-family: fantasy;
+}
+
+.deuxiemeTexteimage1 {
+  color: #4CAF50;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.backgroundImage {
+  background-color: black;
+  opacity: 0.9;
+  margin: 10px;
+  padding: 0;
+}
+
+.backgroundImage.texteGallerie.premierTexteImage1 {
+  text-align: center;
+}
+
+.blocMetier a {
+  text-decoration: none;
+}
+
+/* MÉTIER END*/
+/* ANNONCES START*/
+.titreAnnonces {
+  margin-bottom: 0px;
+}
+
+.titreAnnonces h1 {
+  border-bottom: 2px solid white;
+  margin-bottom: 20px;
+}
+
+.desc{
+font-weight: bold;
+padding-top: 20px;
+}
+
+.images2 {
+  width: 100%;
+  height: 277px;
+  display: block;
+  padding-bottom: 20px;
+}
+
+.text1 {
+  float: right;
+  width: 480px;
+  color: white;
+}
+
+.imagesbis {
+  float: left;
+  width: 500px;
+  margin: 10px;
+}
+
+.images3 {
+  width: 100%;
+  height: 277px;
+  display: block;
+  padding-bottom: 20px;
+}
+
+.titrebis {
+  font-size: 20px;
+  padding-bottom: 0px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.pdf a {
+  text-decoration: none;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.borderChiant {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+}
+
+/* ANNONCES END */
+/* CONTACT START */
+.cadre {
+  background-color: #333333ed;
+  display: inline-block;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  color: white:;
+}
+
+.formulaire {
+  padding-right: 20px;
+  margin-right: 10px;
+  padding-left: 10px
+}
+
+.adresse {
+  padding-left: 10px;
+  padding-right: 180px;
+  vertical-align: top;
+}
+
+.donneeAdresse {
+  font-size: 16px;
+}
+
+.cadre h4 {
+  padding-left: 10px;
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+}
+
+.cadre input {
+  padding-right: 100px;
+  margin-right: 20px;
+  padding-bottom: 10px;
+}
+
+.cadre label {
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+.cadre textarea {
+  vertical-align: top;
+  border: 1px solid #999;
+  width: 271px;
+  box-sizing: border-box
+}
+
+.button {
+  padding-left: 119px;
+  padding-top: 20px;
+}
+
+button {
+  text-decoration: none;
+  background-color: #4CAF50;
+  margin: 10px;
+  padding: 8px;
+  margin-left: 10px;
+  margin-right: 0;
+  color: white;
+  border: none;
+}
+
+.codePostalAdresse {
+  padding-bottom: 10px;
+}
+
+.cTel {
+  padding-bottom: 10px;
+}
+
+.cEmail a {
+  text-decoration: none;
+  color: rgb(89, 152, 206);
+}
+
+.titre2Adresse h5 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.titre1Adresse h4 {
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.titre1Formulaire h4 {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.fondgris.contact {
+  padding-bottom: 50px;
+}
+
+.gMap {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.formulaireAligne.nom label {
+  padding-right: 29px;
+}
+
+.formulaireAligne.prenom label {
+  margin-left: 28px;
+  padding-right: 26px;
+}
+
+.formulaireAligne.email label {
+  margin-left: 36px;
+  padding-right: 32px;
+}
+
+.formulaireAligne.tel label {
+  margin-left: 6px;
+  padding-right: 26px;
+}
+
+.formulaireAligne input {
+  margin-bottom: 10px;
+}
+
+.formulaireAligne.commentaire label {
+  margin-left: 2px;
+  padding-right: 2px;
+}
+
+/* CONTACT END*/
+/* QUI SOMMES-NOUS START */
+section {
+  padding-bottom: 100px;
+}
+
+.image1QuiSommesNous {
+  text-align: center;
+  padding: 20px;
+}
+
+.quiSommesNous p {
+  padding: 10px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.quiSommesNous h4 {
+  color: #4CAF50;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.quiSommesNous h2 {
+  font-size: 60px;
+  font-family: emoji;
+  font-style: oblique;
+  font-weight: bold;
+  color: #4CAF50;
+  text-shadow: 2px 2px white;
+  padding: 50px;
+  text-align: center;
+}
+
+/* QUI SOMMES-NOUS END */
+/* CONDITIONS GÉNÉRALES D'UTILISATION START*/
+.articleStart h2 {
+  font-size: 60px;
+  font-family: emoji;
+  font-style: oblique;
+  font-weight: bold;
+  color: #4CAF50;
+  text-shadow: 2px 2px white;
+  padding: 50px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.articleStart h6 {
+  color: #4CAF50;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.article h4 {
+  color: #4CAF50;
+  padding-top: 10px;
+  text-align: justify;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.article {
+  padding: 10px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+/* CONDITIONS GÉNÉRALES D'UTILISATION END*/
+/* FOOTER START */
+footer {
+  background-color: #333;
+  padding-top: 50px;
+  border-top: 2px solid black;
+}
+
+footer .footerLink h4 {
+  color: white;
+  display: inline-block;
+  padding-right: 20px;
+  margin-bottom: 30px;
+  border-right: solid 2px white;
+}
+
+footer .footerLink.first h4 {
+  padding-left: 20px;
+  border-left: solid 2px white;
+}
+
+.copyright {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.lastline {
+  display: inline-block;
+  padding-right: 3px;
+  color: white;
+}
+
+.lastline.dev {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.footerLink {
+  display: inline-block;
+  margin: 10px;
+}
+
+.socials {
+  margin: 50px;
+  float: right;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.social {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 3px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background-color: #7c807e;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.social .icon {
+  transition: 1s;
+}
+
+.social:hover {
+  box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, 0.3);
+}
+
+.social:hover .icon {
+  transform: translateY(-30px);
+}
+
+.social .fa {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.social .fab {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-facebook:hover {
+  background-color: #3B5998;
+}
+
+.icon-twitter:hover {
+  background-color: #4099ff;
+}
+
+.icon-rss:hover {
+  background-color: #ff8201;
+}
+
+.icon-linkedin:hover {
+  background-color: #0080b1;
+}
+
+.icon-skype:hover {
+  background-color: #00aff0;
+}
+
+.icon-envelope:hover {
+  background-color: #c7392c;
+}
+
+/* FOOTER END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Login*/
+.login {
+  background-color:  #333333ed;
+}
+/* Bordered form */
+.login form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+.login input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.login button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+.login button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.login .cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.login .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+
+/* Add padding to containers */
+.login .container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+.login span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+.login .container{
+  margin-bottom: 120px;
+}
+
+.login b{
+  font-size: 30px;
+  color: #4CAF50;
+}
