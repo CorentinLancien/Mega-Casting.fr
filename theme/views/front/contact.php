@@ -9,7 +9,7 @@
             <div class="tt">
               <h1>Contact</h1>
             </div>
-            <form class="" action="contact.html" method="post">
+            <form class="" action="?contact" method="post">
               <div class="cadre formulaire">
                 <div class="titre1Formulaire">
                   <h4>Formulaire de contact</h4>
@@ -17,27 +17,26 @@
 
                 <div class="formulaireAligne nom">
                   <label for="nom">Nom</label>
-                  <input placeholder="Nom" type="text" name="nom" value="">
+                  <input placeholder="Nom" type="text" name="nom" value=""required="true">
                 </div>
                 <div class="formulaireAligne prenom">
                   <label for="prenom">Prénom</label>
-                  <input placeholder="Prénom" type="text" name="prenom" value="">
+                  <input placeholder="Prénom" type="text" name="prenom" value=""required="true">
                 </div>
                 <div class="formulaireAligne email">
                   <label for="email">E-mail</label>
-                  <input placeholder="Email" type="email" name="email" value="">
+                  <input placeholder="Email" type="email" name="email" value="" required="true">
                 </div>
                 <div class="formulaireAligne tel">
                   <label for="tel">Téléphone</label>
-                  <input placeholder="Téléphone" type="tel" name="tel" value="">
+                  <input placeholder="Téléphone" type="tel" name="tel" value=""required="true">
                 </div>
                 <div class="formulaireAligne commentaire">
                   <label for="prenom">Commentaire</label>
-                  <textarea placeholder="Commentaire" rows="3" id="comm" name="commentaire"></textarea>
+                  <textarea placeholder="Commentaire" rows="3" id="comm" name="commentaire"required="true"></textarea>
                 </div>
                 <div class="button">
-                  <button type="submit">Envoyer</button>
-                  <button type="submit">Annuler</button>
+                  <button name="Send" type="submit">Envoyer</button>
                 </div>
               </div>
 

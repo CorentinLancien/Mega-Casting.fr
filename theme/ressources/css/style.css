@@ -162,6 +162,7 @@ h1 {
 
 .flex-container-gallerie {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .imageGallerie {
@@ -206,6 +207,7 @@ h1 {
 .blocMetier a {
   text-decoration: none;
 }
+
 
 /* MÉTIER END*/
 /* ANNONCES START*/
@@ -689,4 +691,47 @@ footer .footerLink.first h4 {
 .login b{
   font-size: 30px;
   color: #4CAF50;
+}
+
+.date_debut{
+  font-style: italic;
+  font-weight: bold;
+  color: #4CAF50;
+}
+.JobType{
+font-style: italic;
+font-weight: bold;
+}
+
+/* START PRODUCER*/
+.enteteProducer .title h1{
+
+  text-align: left;
+  color:#4CAF50;
+  font-size: 58px;
+}
+.enteteProducer .title{
+  margin: 0;
+}
+.enteteProducer .title .isVerified{
+  font-style: italic;
+  font-size: 14px;
+  color: orangered;
+  text-align: left;
+}
+.contact h3{
+  margin-top: 22px;
+}
+.descriptionProducer h3{
+  margin-top: 22px;
+}
+.descriptionProducer{
+  margin-bottom: 38px;
+}
+.contact span{
+  font-style: italic;
+  color: #4CAF50;
+}
+.container{
+  background-color:
 }
