@@ -35,8 +35,10 @@
                   <label for="prenom">Commentaire</label>
                   <textarea placeholder="Commentaire" rows="3" id="comm" name="commentaire"required="true"></textarea>
                 </div>
+                <div class="g-recaptcha" data-callback="imNotARobot"  data-sitekey="6LfO4dcUAAAAAANBnQA58JmEbLgucshgALuZRIm9"></div>
+					      <div class="error_captcha" id="error_captcha">Pour activer le bouton d'envoi du formulaire, merci de cocher l'option de sécurité ci-dessus.</div>
                 <div class="button">
-                  <button name="Send" type="submit">Envoyer</button>
+                  <button name="Send" id="Send" type="submit">Envoyer</button>
                 </div>
               </div>
 

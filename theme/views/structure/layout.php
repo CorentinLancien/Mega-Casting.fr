@@ -11,6 +11,11 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="/theme/ressources/css/style.css">
+
+  <!-- JS -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="/theme/ressources/js/controller/contact.js" async defer></script>
+
   <!-- Kit FontAwesome -->
   <script src="https://kit.fontawesome.com/e55fbb28a6.js" crossorigin="anonymous"></script>
 

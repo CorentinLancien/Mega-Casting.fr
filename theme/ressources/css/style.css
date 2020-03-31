@@ -327,9 +327,9 @@ padding-top: 20px;
   padding-top: 20px;
 }
 
-button {
+.button button {
   text-decoration: none;
-  background-color: #4CAF50;
+  background-color: #baccbf;
   margin: 10px;
   padding: 8px;
   margin-left: 10px;
@@ -734,4 +734,17 @@ font-weight: bold;
 }
 .container{
   background-color:
+}
+
+/* Recaptcha*/
+.g-recaptcha{
+  margin: 20px;
+  margin-left: 126px;
+}
+.error_captcha{
+ color : red;
+ font-style: italic;
+}
+.messageLogin{
+  color: orangered;
 }
