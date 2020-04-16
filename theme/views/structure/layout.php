@@ -56,12 +56,17 @@
         include_once $_SERVER['DOCUMENT_ROOT'] . '/app/controller/LoginController.php';
       }
 
+      else if($_SERVER['REQUEST_URI'] == '/?deconnexion'){
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/app/controller/DeconnexionController.php';
+      }
+
       else if($_SERVER['REQUEST_URI'] == '/?qui'){
         include_once $_SERVER['DOCUMENT_ROOT'] . '/app/controller/QuiController.php';
       }
       else if($_GET['InformationsSupplementaires'] == ""){
         include_once $_SERVER['DOCUMENT_ROOT'] . '/app/controller/ProducerController.php';
       }
+
     }
     //Chargement du footer
     include_once $_SERVER['DOCUMENT_ROOT'] . '/theme/views/structure/footer.php';

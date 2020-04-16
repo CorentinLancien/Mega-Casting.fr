@@ -21,6 +21,7 @@
         </form>
           <div class="login">
               <a href="/?login"><button type="submit" name="Connectez-vous">Connectez-vous</button></a>
+                <a href="/?deconnexion"><button type="submit" name="Connectez-vous">Deconnexion</button></a>
           </div>
       </li>
     </div>

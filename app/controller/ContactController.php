@@ -2,6 +2,7 @@
 
 include_once $_SERVER['DOCUMENT_ROOT'] . '/theme/views/front/contact.php';
 
+
 $mail = 'corentinlancien35@gmail.com';
 
 if(!empty($_POST['nom'])){

@@ -3,11 +3,50 @@
 include_once $_SERVER["DOCUMENT_ROOT"] . '/app/controller/models/utils/form.php';
 
   function displayAnnonce(){
+
     $bdd = NewDB();
+
+    $button = "";
 
     $query = "SELECT * FROM Offer
     INNER JOIN Job on Offer.Identifiant_Job = Job.Identifiant
     INNER JOIN ContractType on Offer.Identiiant_ContractType = ContractType.Identifiant";
+
+    // On teste si une personne est connectée et si elle est producteur / Client / Partenaire de diffusion
+    if(isset($_SESSION['LoginType'])){
+
+      $loginType = $_SESSION['LoginType'];
+
+      if($loginType == 'producer'){
+        $id = $_SESSION['idProducer'];
+        $button = '<div class="pdf">
+                            <a href="?Producer&idProducer='. $id.'>Voir les CV</a>
+                            </div>'
+
+      }
+      else if($loginType == 'partner'){
+        $id = $_SESSION['idPartner'];
+        $queryPartner = "SELECT * FROM Job_Partner where Identifiant_Partner = " . $id ;
+        $items = $bdd->query($queryPartner);
+        foreach ($items as $item) {
+
+          $query = "SELECT * FROM Offer
+          INNER JOIN Job on Offer.Identifiant_Job = Job.Identifiant
+          INNER JOIN ContractType on Offer.Identiiant_ContractType = ContractType.Identifiant
+          where Identifiant_JobType = " . $item['Identifiant_JobType'];
+        }
+
+      }
+      else if($loginType == 'customer'){
+        $id = $_SESSION['idCustomer'];
+
+        $button = '<div class="pdf">
+                            <a href="?Customer&idCustomer='. $id.'>Proposer un C.V</a>
+                            </div>'
+      }
+    }
+
+
 
     $items = $bdd->query($query);
 
